@@ -6,8 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <body background="assets\images\EmpireVChaosWallpaper.jpg"></body>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/javscript/app.js"> -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+    <div class="container content">
     
-</body>
+    <section class="data">
+    
+        <div class="time">
+            <p class="timer"></p>
+        </div>
+    
+    <!-- these create the questions -->
+        <form action="#">
+            <label>Which of the following is NOT the name of one of 
+            Snow White's 7 Dwarfs?</label> <br>
+            <input type="radio" value="Dopey" name="dwarf"> Dopey <br>
+            <input type="radio" value="Happy" name="dwarf"> Happy<br> 
+            <input type="radio" value="Grumpy" name="dwarf"> Grumpy <br>
+            <input type="radio" value="Sleepy" name="dwarf"> Sleepy <br>
+            <input type="radio" value="Sleezy" name="dwarf"> Sleezy <br>
+    
+    
+            <label>What was Simba's Uncle's Name?</label> <br>
+            <input type="radio" value="Mufasa" name="names"> Mufasa <br>
+            <input type="radio" value="Rafiki" name="names"> Rafiki<br> 
+            <input type="radio" value="BuzzLightyear" name="names"> Buzz Lightyear <br>
+            <input type="radio" value="Pinnochio" name="names"> Pinnochio <br>
+            <input type="radio" value="Scar" name="names"> Scar <br>
+          
+    
+            <label>Who killed Tarzan's Parents?</label> <br>
+            <input type="radio" value="Diego" name="moreNames"> Diego <br>
+            <input type="radio" value="Leo" name="moreNames"> Leo<br> 
+            <input type="radio" value="Abednego" name="moreNames"> Abednego<br>
+            <input type="radio" value="Sabor" name="moreNames"> Sabor <br>
+            <input type="radio" value="Kerchak" name="moreNames"> Kerchak <br>
+    
+    
+            <label>What is the name of Belle's (Beauty and the Beast) horse?</label> <br>
+            <input type="radio" value="Maximus" name="horses"> Maximus  <br>
+            <input type="radio" value="Phillipe" name="horses"> Phillipe<br> 
+            <input type="radio" value="Fred" name="horses"> Fred<br>
+              <input type="radio" value="Achilles" name="horses"> Archilles <br>
+            <input type="radio" value="Maurice" name="horses"> Maurice <br>
+          
+            <label>What's Flynn's (Tangled) Real Name?</label> <br>
+            <input type="radio" value="Kuzco" name="whoKNowns"> Kuzco <br>
+            <input type="radio" value="Alexander Hamilton" name="whoKNowns"> Alexander Hamilton<br> 
+            <input type="radio" value="Nasty Swissburger" name="whoKNowns"> Nasty Swissburger<br>
+              <input type="radio" value="Eugene Fitzherbert" name="whoKNowns"> Eugene Fitzherbert <br>
+            <input type="radio" value="Kronker Pepikrankenitz" name="whoKNowns"> Kronker Pepikrankenitz <br>
+          
+            <label>Which year did the Lion King debut?</label> <br>
+            <input type="radio" value="1994" name="moreYears"> 1994 <br>
+            <input type="radio" value="1998" name="moreYears"> 1998<br>
+            <input type="radio" value="1492" name="moreYears"> 1492 <br>
+              <input type="radio" value="1986" name="moreYears"> 1986 <br>
+            <input type="radio" value="1993" name="moreYears"> 1993 <br>
+    
+        </form>
+    
+        <button class="btn btn-primary done">Done</button>
+    
+    </section>
+    
+    
+    
+        <div class="sum">
+            <p class="correct"></p>
+            <p class="incorrect"></p>				
+            <p class="unanswrd"></p>		
+        </div>		
+    
+    <button class="btn btn-primary start">Start</button>
+    
+    </div>
+    
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+    </body>
 </html>
