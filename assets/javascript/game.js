@@ -1,5 +1,5 @@
 // Global Variables
-var answers = ["Sleezy", "Scar", "Sabor", "Maurice", "Eugene Fitzherbert", "1994"], 
+var answers = ["KarlFranz", "LeonardoMiragliano", "LordKroak", "LordSkrolk", "SlayerofKings", "2016"], 
  	data = $("input"), 
  	correctAnswers = 0, 
  	incorrectAnswers = 0, 
@@ -33,7 +33,10 @@ function startGame() {
 
 	}
 
-	
+	$(".correct").html("Correct Answers: " + correctAnswers);
+	$(".incorrect").html("Incorrect Answers: " + incorrectAnswers);
+	$(".unanswered").html("Unanswered: " + unanswrd );
+	$(".sum p").addClass("stylish");
     
 } 
 
