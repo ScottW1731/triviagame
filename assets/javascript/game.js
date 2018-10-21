@@ -40,3 +40,15 @@ function startGame() {
     
 } 
 
+// adding in a on click function to display answers and a timer
+$(".start").on("click", function() {
+	$(".start").css("display", "none");
+	$(".data").css("display", "block");
+
+	
+
+	$(".done").on("click", function() {
+		clearInterval(startTimer); 
+		startGame(); 
+	});
+}); 
