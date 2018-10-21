@@ -45,7 +45,26 @@ $(".start").on("click", function() {
 	$(".start").css("display", "none");
 	$(".data").css("display", "block");
 
-	
+	// fleshing out the start timer
+	var startTimer = setInterval(function() {
+		timer--;
+		
+		// if else if statements
+		if (timer > 59) {
+			$(".timer").html("You have " + "00:" + timer + " remaining");
+		}
+
+		else if (timer <= 59) {
+			$(".timer").html("You have " + "00:" + timer + " remaining");
+		}
+
+
+		if (timer <= 0) {
+			clearInterval(startTimer); 
+			startGame(); 
+
+		}
+	}, 60000); 
 
 	$(".done").on("click", function() {
 		clearInterval(startTimer); 
