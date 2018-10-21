@@ -1,0 +1,16 @@
+/* .jumbotron{
+    background-image: url(../images/EmpireVChaosWallpaper.jpg);
+    background-size: 80%;
+    background-position: center top;
+
+} */
+body {
+    margin-bottom: 100px;
+    width: 100%;
+    background-image: url(../images/EmpireVChaosWallpaper.jpg);
+    background-size: cover;
+}
+
+form {
+    color: white;
+}
