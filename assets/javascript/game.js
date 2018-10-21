@@ -6,7 +6,7 @@ var answers = ["KarlFranz", "LeonardoMiragliano", "LordKroak", "LordSkrolk", "Sl
  	unanswrd = 0,
  	timer = 60;
 
-//click start button to activate game
+// click start button to activate game
 // refresh to restart
 function startGame() {
 	$(".data").css("display", "none");
@@ -45,7 +45,7 @@ $(".start").on("click", function() {
 	$(".start").css("display", "none");
 	$(".data").css("display", "block");
 
-	// fleshing out the start timer
+	// fleshing out the start timer with decrementer
 	var startTimer = setInterval(function() {
 		timer--;
 		
@@ -57,7 +57,6 @@ $(".start").on("click", function() {
 		else if (timer <= 59) {
 			$(".timer").html("You have " + "00:" + timer + " remaining");
 		}
-
 
 		if (timer <= 0) {
 			clearInterval(startTimer); 
