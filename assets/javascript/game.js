@@ -24,7 +24,16 @@ function startGame() {
 			}
 		} 
 	} 
+	// variable
+	var sum = correctAnswers + incorrectAnswers;
 
+	// if statement
+	if (sum !== 4) {
+		unanswrd = 4 - sum; 
+
+	}
+
+	
     
 } 
 
